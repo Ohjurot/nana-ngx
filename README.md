@@ -1,37 +1,60 @@
-# Nana C++ Library 
-[Linux (gcc 8.3.0 and 9.2)![TravisCI build status](https://travis-ci.org/cnjinhao/nana.svg)](https://travis-ci.org/cnjinhao/nana)  including [(nana-demos)](https://github.com/qPCR4vir/nana-demo)
+# Nana Generation X (Fork of: Nana C++ Library) 
+[![Licence](https://img.shields.io/badge/license-BSL-blue.svg?style=flat)](BSL-LICENSE)
 
-[Windows (Microsoft (R) Build Engine version 15.9.21) ![AppVeyor build status](https://ci.appveyor.com/api/projects/status/5j79p9fi887usv7h?svg=true)](https://ci.appveyor.com/project/qPCR4vir/nana) 
+```md
+Warning: This is NOT the original nana repo. This is a fork that aims to continue supporting nana.
+This fork is currently NOT operational. Until the v1.8 release please make sure to use the original nana repo! See our roadmap!
+```
 
-[![Licence](https://img.shields.io/badge/license-BSL-blue.svg?style=flat)](LICENSE)
+Nana is a C++ standard-like GUI library designed to allow developers to easily create cross-platform GUI applications with modern C++ style. 
 
+This is a fork of the original [nana repository](https://github.com/cnjinhao/nana). The goals of this fork are:
+- Actively supporting nana
+- Moving nana to the "next generation" by
+    - Unifying the build system to CMake
+    - Managing dependencies, building and packaging with conan
+    - Unit-Testing and Benchmarking
+- Source, Documentation and Examples in one place
+- Continuing the development of nana and new features
 
-Nana is a C++ standard-like GUI library designed to allow developers to easily create cross-platform GUI applications with modern C++ style. Currently it is regularly tested on Linux(X11) and Windows, and experimentally on macOS and FreeBSD. The [nana repository](https://github.com/cnjinhao/nana) contains the entire source of the library. You can browse the source code and submit your pull request for contributing.
+Currently it is regularly tested on Windows and Linux(X11). OSX and FreeBSD are currently NOT supported by this fork but may work. You can browse the source code and submit your pull request for contributing.
 
+## Features
+TODO: This section shall contain a list of nana's features. Also add a list of controls.
+
+## Roadmap
+This fork is currently not operation. This list will track the progress:
+- [x] New repo layout for nana.
+- [ ] Get v1.8-develope build on all target platforms using conan and the new build systems.
+- [ ] Get CI, CLA, etc. working.  
+- [ ] Preparing GitHub repo for collaboration. 
+- [ ] Start discussions about features for v2.0.0.
+- [ ] Encourage other developers (from original nana) to adopt their PR's to the new repo style and open a PR on this repo.
+- [ ] Finally release v1.8 as a LTS supported version. The idea is to bring one version that will stay compatible with old nana and will be supported a long time. It shall serve as a "always working" drop in replacement for migrating old projects towards "nana generation x".
+- [ ] Begin development towards version 2.0.0 "nana generation x". 
+    - [ ] Create unit tests and benchmarks.
+    - [ ] Create several example applications.
+    - [ ] Create documentation.
+- [ ] First ngx release.
+ 
 ## License
-
 Nana is licensed under the [Boost Software License](http://www.boost.org/LICENSE_1_0.txt)
 
 ## Members
+This fork is maintained by:
+- Ludwig Füchsl - Moxibyte GmbH
+- Individual contributors to this repository
 
-Jinhao, [Ariel Viña Rodríguez].
-
-[Ariel Viña Rodríguez]: http://qpcr4vir.github.io/
+Nana was originally created by:
+[Jinhao](https://github.com/cnjinhao), [Ariel Viña Rodríguez](https://github.com/qPCR4vir) and all original contributors. 
 
 ## Support
-
-The best way to get help with Nana library is by visiting http://nanapro.org/help.htm
+Feel free to open an issue here on GitHub.
 
 ## Sending a Pull Request ?
+This project encourage you to contribute through sending a pull request! We are actively working on the main branch. Please make sure to keep your fork synced with main.
 
-This project encourage you to contribute through sending a pull request! There is a simple rule: please **don't** directly commit your contributions to the **master** branch. According to your commits, please choose the **hotfixes** branch or the **develop** branch. Thank you!
-
-## Introduction to the Repository
-
-There are two main branches with an infinite lifetime:
-* **master** is the main branch and it is marked as every version release.
-* **develop** is also another main branch where the source code reflects a state with the lastest delivered developement changes for the next release.
-
-Other branches:
-* **features** are used to develop new features for the upcoming or a distant future release. Feature branches are named as 'feature-FEATURENAME'.
-* **hotfix** is meant to prepare for a new release, and fixes some bugs from the corresponding tag on the master branch.
+## Available Versions
+We are currently aiming to support two version of the lib: 
+- **main** / **ngx-v2.x.x**: This is the main branch. We use it for active development. Every release will be tracked as a tag (Example: `v2.0.0`)
+* **1.8-lts** / **v1.8.x**: This is used as a long term supported version for "classical" nana, with all currently pending PRs and issues solved.
