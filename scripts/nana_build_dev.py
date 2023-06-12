@@ -27,6 +27,7 @@ if __name__ == "__main__":
 
         "-b", "missing",
         "-g", "CMakeDeps",
+        "-g", "CMakeToolchain",
         "-d", "full_deploy",
         "-of", "./install",
 
