@@ -1,0 +1,6 @@
+# Ignore python venv
+/venv
+
+# Ignore installed nana
+/install
+/sdk

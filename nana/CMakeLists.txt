@@ -22,10 +22,11 @@
 # cmake 3.12 have more better modern c++ support
 
 cmake_minimum_required(VERSION 3.12  FATAL_ERROR)
-project(nana VERSION      1.8
-        DESCRIPTION "C++ GUI library"
-        HOMEPAGE_URL http://nanapro.org
-        LANGUAGES CXX         )
+project(nana VERSION    1.8
+        DESCRIPTION     "C++ GUI library"
+        HOMEPAGE_URL    http://nanapro.org
+        LANGUAGES       CXX         
+        )
 
 #######################     Main setting of Nana targets, sources and installs    #####################
 
@@ -126,16 +127,16 @@ if(NANA_CMAKE_AUTOMATIC_GUI_TESTING)
     # todo: enable_testing()       #  ??
 endif()
 
-list (APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/build/cmake/Modules)
-include(${CMAKE_CURRENT_LIST_DIR}/build/cmake/install_nana.cmake)   # includes and libs, or just expose the nana target
-include(${CMAKE_CURRENT_LIST_DIR}/build/cmake/OS.cmake)             # windows, unix, linux, apple, ...
-include(${CMAKE_CURRENT_LIST_DIR}/build/cmake/shared_libs.cmake)    # static vs shared
-include(${CMAKE_CURRENT_LIST_DIR}/build/cmake/compilers.cmake)      # VC, gcc, clang
+list (APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake/Modules)
+include(${CMAKE_CURRENT_LIST_DIR}/cmake/install_nana.cmake)   # includes and libs, or just expose the nana target
+include(${CMAKE_CURRENT_LIST_DIR}/cmake/OS.cmake)             # windows, unix, linux, apple, ...
+include(${CMAKE_CURRENT_LIST_DIR}/cmake/shared_libs.cmake)    # static vs shared
+include(${CMAKE_CURRENT_LIST_DIR}/cmake/compilers.cmake)      # VC, gcc, clang
 
 ############# Optional libraries    #####################
-include(${CMAKE_CURRENT_LIST_DIR}/build/cmake/enable_png.cmake)
-include(${CMAKE_CURRENT_LIST_DIR}/build/cmake/enable_jpeg.cmake)
-include(${CMAKE_CURRENT_LIST_DIR}/build/cmake/enable_audio.cmake)
-include(${CMAKE_CURRENT_LIST_DIR}/build/cmake/select_filesystem.cmake)
-include(${CMAKE_CURRENT_LIST_DIR}/build/cmake/verbose.cmake)        # Just for information
+include(${CMAKE_CURRENT_LIST_DIR}/cmake/enable_png.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/cmake/enable_jpeg.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/cmake/enable_audio.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/cmake/select_filesystem.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/cmake/verbose.cmake)        # Just for information
 
