@@ -65,6 +65,7 @@ Work in progress roadmap for out first nana ngx release. **Please feel free to d
     * [ ] Drag and Drop :material-update:
     * [ ] msgbox, filebox, folderbox :material-update:
     * [ ] Dialog System :material-update: :material-new-box: Update inputbox into a modern extensible and more flexible system. Add-Hoc dialogs using the `<<` operator and a fluent interface. [^2]
+    * [ ] Ready to use "progressbox". Gets one or many job(s) assigned. Shows as progressbar while working. Auto closes when jobs are finished. If multiple jobs are provided it shows a two level progress interface. If the job inherits from trackable_job it shall report progress that is then displayed in the progressbox. Can block other forms via the `show_dialog(*this)` method.  
 - [ ] Lib delivery 
     * [ ] Platform Support
         - [x] Windows (amd64)

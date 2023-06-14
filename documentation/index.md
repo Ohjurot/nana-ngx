@@ -5,7 +5,7 @@ authors:
     - Ludwig Fuechsl
 ---
 
-# Nana NGX (Nana generation X)
+# Nana NGX (**N**ana **G**eneration **X**)
 Nana is a cross-platform library (Windows & Linux) for GUI programming in modern C++ style.
 
 ## Quick example

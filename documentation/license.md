@@ -37,5 +37,5 @@ DEALINGS IN THE SOFTWARE.
 ## Contributors
 - Nana was initially created and developed by [Jinhao](https://github.com/cnjinhao)
 - A large portion of the code is written by [Ariel Vina-Rodriguez](https://github.com/qPCR4vir)
-- This fork is maintained by [Ludwig F&uuml;chsl](https://github.com/Ohjurot)
+- This fork is maintained by [Ludwig F&uuml;chsl](https://github.com/Ohjurot) @ [Moxibyte GmbH](https://moxibyte.com)
 - Thanks to all individual nana and nana-ngx contributors!
