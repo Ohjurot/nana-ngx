@@ -47,4 +47,6 @@ if __name__ == "__main__":
             nm = license[len(license_base)-1::]
             license_dst = f"./sdk/licenses/{lib}.{nm}"
             shutil.copyfile(license, license_dst)
-        
+    
+    # Copy nana license
+    shutil.copyfile("LICENSE", "./sdk/LICENSE")

@@ -8,6 +8,7 @@
 #   Pavel O. - fix compilation with boost::filesystem (#281)
 #   Frostbane - Add option for compiling a shared library (#263,#265)
 #   Qiangqiang Wu - Add biicode support: todo migrate to https://conan.io/
+#   Ludwig Fuechsl (Ohjurot) - Migration to NGX (nana generation x)
 #
 # Nana uses some build systems: MS-VS solution, MAKE, bakefile, codeblock, etc. manually optimized.
 # Maybe CMake will be used in the future to generate some of them in the central nana repository.

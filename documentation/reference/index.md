@@ -1,0 +1,9 @@
+---
+title: Nana Reference
+summary: Nana API Reference
+authors:
+    - Ludwig Fuechsl
+---
+
+# Reference
+Please visit [the old documentation](http://nanapro.org). This page will be updated for nana-ngx v2.0!
