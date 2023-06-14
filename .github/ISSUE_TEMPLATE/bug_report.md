@@ -2,7 +2,7 @@
 name: Bug report
 about: Found a Bug? Please report it now!
 title: "[BUG] "
-labels: t - bug
+labels: s - PENDING, t - bug
 assignees: ''
 
 ---
