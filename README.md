@@ -1,13 +1,12 @@
 # Nana Generation X (Fork of: Nana C++ Library) 
 [![Licence](https://img.shields.io/badge/license-BSL-blue.svg?style=flat)](BSL-LICENSE)
 
-```md
-Warning: This is NOT the original nana repo. This is a fork that aims to continue supporting nana.
-This fork is currently NOT operational. Until the v1.8 release please make sure to use the original nana repo! See our roadmap!
-```
 
-Nana is a C++ standard-like GUI library designed to allow developers to easily create cross-platform GUI applications with modern C++ style. 
+**Warning: This is NOT the original nana repo. This is a fork that aims to continue supporting nana.**
 
+**This fork is currently NOT operational. Until the v1.8 release please make sure to use the original nana repo! See our roadmap!**
+
+Nana is a C++ standard-like GUI library designed to allow developers to easily create cross-platform GUI applications with modern C++ style.
 This is a fork of the original [nana repository](https://github.com/cnjinhao/nana). The goals of this fork are:
 - Actively supporting nana
 - Moving nana to the "next generation" by
@@ -25,16 +24,12 @@ TODO: This section shall contain a list of nana's features. Also add a list of c
 ## Roadmap
 This fork is currently not operation. This list will track the progress:
 - [x] New repo layout for nana.
-- [ ] Get v1.8-develope build on all target platforms using conan and the new build systems.
 - [ ] Get CI, CLA, etc. working.  
-- [ ] Preparing GitHub repo for collaboration. 
-- [ ] Start discussions about features for v2.0.0.
 - [ ] Encourage other developers (from original nana) to adopt their PR's to the new repo style and open a PR on this repo.
+- [ ] Get v1.8-develope build on all target platforms using conan and the new build systems. 
 - [ ] Finally release v1.8 as a LTS supported version. The idea is to bring one version that will stay compatible with old nana and will be supported a long time. It shall serve as a "always working" drop in replacement for migrating old projects towards "nana generation x".
+- [x] Start discussions about features for v2.0.0.
 - [ ] Begin development towards version 2.0.0 "nana generation x". 
-    - [ ] Create unit tests and benchmarks.
-    - [ ] Create several example applications.
-    - [ ] Create documentation.
 - [ ] First ngx release.
  
 ## License
@@ -45,16 +40,10 @@ This fork is maintained by:
 - Ludwig Füchsl - Moxibyte GmbH
 - Individual contributors to this repository
 
-Nana was originally created by:
-[Jinhao](https://github.com/cnjinhao), [Ariel Viña Rodríguez](https://github.com/qPCR4vir) and all original contributors. 
+Nana was originally created by: [Jinhao](https://github.com/cnjinhao) and all original contributors. 
 
 ## Support
 Feel free to open an issue here on GitHub.
 
 ## Sending a Pull Request ?
 This project encourage you to contribute through sending a pull request! We are actively working on the main branch. Please make sure to keep your fork synced with main.
-
-## Available Versions
-We are currently aiming to support two version of the lib: 
-- **main** / **ngx-v2.x.x**: This is the main branch. We use it for active development. Every release will be tracked as a tag (Example: `v2.0.0`)
-* **1.8-lts** / **v1.8.x**: This is used as a long term supported version for "classical" nana, with all currently pending PRs and issues solved.
