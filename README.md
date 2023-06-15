@@ -40,6 +40,12 @@ This fork is maintained by:
 - Ludwig Füchsl - Moxibyte GmbH
 - Individual contributors to this repository
 
+Original [nana](https://github.com/cnjinhao/nana) members:
+
+- [Jinhao](https://github.com/cnjinhao)
+- [Ariel Viña Rodríguez](https://github.com/qPCR4vir) 
+- all original contributors
+
 Nana was originally created by: [Jinhao](https://github.com/cnjinhao) and all original contributors. 
 
 ## Support
