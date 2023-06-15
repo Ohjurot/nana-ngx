@@ -143,7 +143,7 @@ if(result.button == dialog::btn_save)
 [^3]: JSON i18n example:
 ```json
 {
-    "key": "value %arg1%",
+    "key": "value {PLAIN/FMT::FORMAT/STD::FORMAT}",
     // global i18n will copy this key as "my-form" i18n
     // "#XXX..." is reserved for forms (go down the hierarchy)
     "#my-form": {  
@@ -162,7 +162,7 @@ if(result.button == dialog::btn_save)
     // The search order is root["@<name>"] then current["#<name>"]
     // "@XXX..." is reserved for root forms
     "@root-fm": {
-        ".title": "Work in progress: %arg1%",
+        ".title": "Work in progress: {PLAIN/FMT::FORMAT/STD::FORMAT}",
 
         "btn-1": {
             "running": "Pause",
