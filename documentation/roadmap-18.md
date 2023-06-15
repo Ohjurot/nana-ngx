@@ -7,7 +7,7 @@ authors:
 
 # Nana 1.8 (Nana LTS)
 
-Nana version 1.8 (LTS - Long Term Support) shall be a (more or less) drop-in replacement for existing code that uses nana. 
+Nana version 1.8 (LTS - Long Term Support) shall be a (more or less) drop-in replacement for existing code that uses the original nana. 
 
 ## Progress
 - [x] Migration of the old codebase to the new repository
@@ -50,8 +50,6 @@ If all of the following and above checkboxes are ticked, then we are ready to pu
     * [x] Ready on old repo
     * [x] Relevant for `v1.8-LTS`
     * [ ] Evaluate: `On that note I also wanted to say that the pixel buffer can be quite difficult to get pixel data from. Maybe the API could be improved in that regard.`
-    * [ ] Code Review: 
-        - `std::vector<uint8_t> pixels(size.width * size.height * 4);` to `uint8_t* pixels = new uint8_t[...];` (Check if this might be better to reduce memory footprint & allocation count)
     * [ ] Author contacted
     * [ ] Planed for `v1.8-LTS`
 - [ ] [add listbox::items() method to get all items index_pairs](https://github.com/cnjinhao/nana/pull/613)
@@ -59,7 +57,7 @@ If all of the following and above checkboxes are ticked, then we are ready to pu
     * [x] Relevant for `v1.8-LTS` --> Maybe... say "Yes" for now...
     * [ ] Author contacted
     * [ ] Planed for `v1.8-LTS`
-- [x] [Introduce command to share with menu and toolbar](https://github.com/cnjinhao/nana/pull/609) (Not relevant for `v1.8.0` we don't want to introduce new features. We can plan to use this for `v2.x`)
+- [x] [Introduce command to share with menu and toolbar](https://github.com/cnjinhao/nana/pull/609) (Not ready. Not relevant for `v1.8.0` we don't want to introduce new features. We can plan to use this for `v2.x`)
 
 ### Issues
 - [x] #238 [macOS support?](https://github.com/cnjinhao/nana/issues/238) --> New feature --> Not in `v1.8-LTS` 

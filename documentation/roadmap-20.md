@@ -13,7 +13,7 @@ But don't worry! We will continue to support version `1.8-LTS`!
 ## Roadmap
 Work in progress roadmap for out first nana ngx release. By no means complete or guaranteed. This is what I wish for a nana version `2.x`, also want your whishes to be recorded? Discuss with us!
 
-**[Please feel free to discuss and add your own features with us on GitHub](#)**. 
+**[Please feel free to discuss and add your own features with us on GitHub](https://github.com/Moxibyte/nana-ngx/discussions/categories/2-x-ideas)**. 
 
 - [ ] Inversion of control (IoC) - Full isolation between implementation and lib. [^1]
     * [ ] Implement IoC container. Interface registered as factory or singleton. Registering n details. Set ONE default detail. Query for default, X and X or fallback.
@@ -86,7 +86,7 @@ Work in progress roadmap for out first nana ngx release. By no means complete or
         - [ ] Audio streaming (From disk)
     * [ ] Drag and Drop :material-update:
     * [ ] msgbox, filebox, folderbox :material-update:
-    * [ ] Dialog System :material-update: :material-new-box: Update inputbox into a modern extensible and more flexible system. Add-Hoc dialogs using the `<<` operator and a fluent interface. [^2]
+    * [ ] Dialog System :material-update: :material-new-box: Update inputbox into a modern extensible and more flexible system. Ad-Hoc dialogs using the `<<` operator and a fluent interface. [^2]
     * [ ] Ready to use "progressbox". Gets one or many job(s) assigned. Shows as progressbar while working. Auto closes when jobs are finished. If multiple jobs are provided it shows a two level progress interface. If the job inherits from trackable_job it shall report progress that is then displayed in the progressbox. Can block other forms via the `show_dialog(*this)` method.  
     * [ ] More ready to use forms. It would make sense to add a collection of widgets that are used often. With `dialog_result` and `show_dialog` this could become a very powerful toolkit for desktop apps. [^4]
 - [ ] Lib delivery 
@@ -105,7 +105,7 @@ Work in progress roadmap for out first nana ngx release. By no means complete or
         - [ ] Clang
     * [ ] Packages:
         - [x] SourceCode via GitHub
-        - [ ] Precompiled SDK as GitHub downloads (amd64 @Windows @Linux)
+        - [ ] Precompiled SDK as GitHub downloads (Build artifacts from actions)
         - [ ] Conan2 package via conan center 
         - [ ] nuget - Maybe
 
@@ -180,10 +180,14 @@ if(result.button == dialog::btn_save)
 [^4]: How powerful would this be?
 ```cpp
 nana::job task = 
-    [&]()
+    [&](nana::job_progress_handle progress)
     {
+        progress.Reset(members.count());
         for(auto& member : members)
+        {
             member.do_work();
+            progress.Step();
+        }
     };
 nana::progress_box pb;
 pb << task;

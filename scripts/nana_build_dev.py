@@ -12,6 +12,8 @@ if __name__ == "__main__":
     # Create the package
     subprocess.run((
         "conan", "create", "./nana", 
+        "-b", "missing",
+
         "-o", "nana/*:enable_jpeg=True",
         "-o", "nana/*:enable_png=True",
         "-o", "nana/*:enable_audio=True", 

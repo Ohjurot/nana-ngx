@@ -14,7 +14,7 @@ Nana is a cross-platform C++ library for GUI programming with a modern C++ style
 
 ## Quick example
 This is how fast you can get a result using nana:
-```cpp title="Hello Nana"
+```cpp title="Hello Nana" linenums="1"
 #include <nana/gui.hpp>
 #include <nana/gui/widgets/label.hpp>
 #include <nana/gui/widgets/button.hpp>
@@ -23,29 +23,32 @@ int main()
 {
     using namespace nana;
 
-    //Define a form.
+    // Define a form.
     form fm;
 
-    //Define a label and display a text.
-    label lab{fm, "Hello, <bold blue size=16>Nana C++ Library</>"};
-    lab.format(true);
+    // Define a label and display a text.
+    label lbl(fm, "Hello, <bold blue size=16>Nana C++ Library</>");
+    lbl.format(true);
 
-    //Define a button and answer the click event.
-    button btn{fm, "Quit"};
-    btn.events().click([&fm]{
-        fm.close();
-    });
+    // Define a button and answer the click event.
+    button btn(fm, "Quit");
+    btn.events().click(
+        [&fm]()
+        {
+            fm.close();
+        }
+    );
 
-    //Layout management
+    // Layout management
     fm.div("vert <><<><weight=80% text><>><><weight=24<><button><>><>");
-    fm["text"]<<lab;
+    fm["text"] << lbl;
     fm["button"] << btn;
     fm.collocate();
 	
-    //Show the form
+    // Show the form
     fm.show();
 
-    //Start to event loop process, it blocks until the form is closed.
+    // Start to event loop process, it blocks until the form is closed.
     exec();
 }
 ```
