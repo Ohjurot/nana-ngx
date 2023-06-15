@@ -1,5 +1,11 @@
 """
-This script will create the "nana/dev" package with
+    This script will create the "nana/dev" package
+    
+	NGX (Nana) C++ Library (https://nana-ngx.com)
+	(C) Copyright 2023 Moxibyte GmbH
+
+	Distributed under the Boost Software License, Version 1.0.
+	See accompanying LICENSE file
 """
 
 import subprocess
