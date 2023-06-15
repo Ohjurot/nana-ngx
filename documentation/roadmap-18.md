@@ -7,18 +7,18 @@ authors:
 
 # Nana 1.8 (Nana LTS)
 
-Nana version 1.8 (LTS - Long Term Support) shall be a drop-in replacement for existing code that uses nana. 
+Nana version 1.8 (LTS - Long Term Support) shall be a (more or less) drop-in replacement for existing code that uses nana. 
 
 ## Progress
 - [x] Migration of the old codebase to the new repository
-- [ ] Migration and resolve all old Pull-Requests and Issues
+- [ ] Migration and resolve all old Pull-Requests and Issues (Work in progress)
 - [ ] Revisiting of all control's on a reference Windows and Linux machine. Resolving of breaking bugs
 - [ ] Repository Setup for a LTS release
 
 ## Support
-Currently we provide the following support for exiting applications:
+Currently we provide the following support for existing applications:
 
-- Drop in replacement when using out SDK or Conan2
+- Easy migration when using our SDK or Conan2
 - Support via GitHub issues (Tag `v1.8-LTS`)
 - Updates to prevent the LTS version from breaking
 - Community driven support
@@ -26,13 +26,13 @@ Currently we provide the following support for exiting applications:
 We don't support:
 
 - New features
-- Documentation
+- Documentation (Please use the [old one](http://nanapro.org))
 - Commercial support (If you need commercial support contact me at [sales@moxibyte.com](mailto:sales@moxibyte.com))
 
 LTS Support is planed to at least continue until end of 2026. An exact data will be provided as soon as we release v2.0. 
 
 ## Open PRs & Issues
-If all of the following checkboxes are ticked, then we are ready to publish `v1.8.0` :wink:
+If all of the following and above checkboxes are ticked, then we are ready to publish `v1.8.0` :wink:
 ### Pull Requests
 - [ ] [Removed char8_t support from nana::menu since it was broken and unused.](https://github.com/cnjinhao/nana/pull/661)
     * [x] Ready on old repo
@@ -51,7 +51,7 @@ If all of the following checkboxes are ticked, then we are ready to publish `v1.
     * [x] Relevant for `v1.8-LTS`
     * [ ] Evaluate: `On that note I also wanted to say that the pixel buffer can be quite difficult to get pixel data from. Maybe the API could be improved in that regard.`
     * [ ] Code Review: 
-        - `std::vector<uint8_t> pixels(size.width * size.height * 4);` to `uint8_t* pixels = new uint8_t[...];` (Check if this might be better to reduce memory footprint & allocations count)
+        - `std::vector<uint8_t> pixels(size.width * size.height * 4);` to `uint8_t* pixels = new uint8_t[...];` (Check if this might be better to reduce memory footprint & allocation count)
     * [ ] Author contacted
     * [ ] Planed for `v1.8-LTS`
 - [ ] [add listbox::items() method to get all items index_pairs](https://github.com/cnjinhao/nana/pull/613)

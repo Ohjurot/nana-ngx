@@ -6,7 +6,11 @@ authors:
 ---
 
 # Nana NGX (**N**ana **G**eneration **X**)
-Nana is a cross-platform library (Windows & Linux) for GUI programming in modern C++ style.
+Nana is a cross-platform C++ library for GUI programming with a modern C++ style.
+!!! warning
+    We are currently in the process of developing the last classical nana release (`v1.8-LTS`). Please report the features/fixes that are important for you NOW. Our current platform support is limited to Windows and Linux. This shall change with `v2.x`.
+
+    We will soon begin working on nana NGX (`v2.x`). Feel free to give us your suggestions as well. 
 
 ## Quick example
 This is how fast you can get a result using nana:
@@ -54,9 +58,10 @@ shown any activity for over a year now! (The last nana release was in 2020)
 We aim to bring the following improvements to nana:
  
 - **Active support and development**: Via GitHub (Open Source)
-- **Modern repository layout**: Unified build system, CI and CD (Conan package, Documentation, ...)
-- **Better documentation**
-- **Extensible**: Allow nana to be more modular and extensible with by users. Provide a common workflow for creating, submitting and publishing extension. TODO: Direct contribution vs. Extension (Solve the problem / define borders)
 - **Features**: Improvements and new features 
+- **Modular**: We aim to support as much as possible (ex. png, jpeg). However we will also provide a way to turn off the support and by that the dependencies!
+- **Extensible**: Allow nana to be extensible by extensions and the end product. Provide a common workflow for creating, submitting and publishing extension. 
+- **Better documentation**: Consistent and consequent documentation in ONE place. Information, API-Reference, Guides, Examples, ... everything shall be hosted in one repo and shall be automatically deployed via GitHub actions to this GitHub page. 
+- **Modern repository layout**: Unified CMake and Conan2 based build system. Automation with CI and CD via GitHub actions.  
 
 See our [Roadmap](roadmap-20.md) for a status on nana v2.0
