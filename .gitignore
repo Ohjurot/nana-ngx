@@ -1,6 +1,17 @@
 # Ignore python venv
 /venv
 
-# Ignore installed nana
+# SDK generation
 /install
 /sdk
+
+# Visual studio dev
+/.vs
+**.sln
+**.vcxproj
+**.vcxproj.user
+**.vcxproj.filters
+
+# Development install and build
+/install-dev
+/build-dev
